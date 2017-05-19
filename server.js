@@ -72,7 +72,7 @@ function deal_data(_appid,data,callback)
     var ret_list = [];
 	for (var i = 0; i < data.length; i++)
 	{
-        if(data[i].id == _appid ||(_appid == 'all' && images.indexOf(data[i].attributes.image_name.replace(/:[^ ]+/,''))>-1) )
+        if(data[i].id == _appid || _appid == 'all' )
         {
 	        var jn = data[i];	
             console.log(jn);
